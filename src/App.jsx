@@ -1,17 +1,17 @@
 import { useState } from 'react';
 import './App.css';
-import Appp from './components/Appp';  // Import your Appp component
-import Welcome from './components/Welcome';  // Import your Welcome component
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';  // Import Router, Routes, Route
+import Appp from './components/Appp';  
+import Welcome from './components/Welcome'; 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';  
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <Router>  {/* Wrap Routes inside Router */}
+    <Router>  
       <Routes>
-        <Route path="/" element={<Appp />} />  {/* Home route to Appp */}
-        <Route path="/welcome" element={<Welcome />} />  {/* Welcome route */}
+        <Route path="/" element={<Appp />} /> 
+        <Route path="/welcome" element={<Welcome />} /> 
       </Routes>
     </Router>
   );
